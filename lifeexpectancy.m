@@ -57,7 +57,3 @@ ylabel('Life Expectancy (in years)')
 axis([1987 2015 30 95])
 hold off
 
-
-
-
-
