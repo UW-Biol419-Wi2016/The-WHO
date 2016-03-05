@@ -42,13 +42,13 @@ for i = 1:numel(lifeexpectdouble(:,2)),
     end;
 end;
 
-avg1990 = mean(lifeexpecty(:,1))
-avg2000 = mean(lifeexpecty(:,2))
-avg2013 = mean(lifeexpecty(:,3))
+leavg1990 = mean(lifeexpecty(:,1))
+leavg2000 = mean(lifeexpecty(:,2))
+leavg2013 = mean(lifeexpecty(:,3))
 
 figure;
 hold on
-plot([lifeexpectx(1,1),lifeexpectx(1,2),lifeexpectx(1,3)],[avg1990,avg2000,avg2013],'k-o')
+plot([lifeexpectx(1,1),lifeexpectx(1,2),lifeexpectx(1,3)],[leavg1990,leavg2000,leavg2013],'k-o')
 plot(lifeexpectx, lifeexpecty, 'x')
 legend('average life expectancy')
 title('Life Expectancy in Every Country')
