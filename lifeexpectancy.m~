@@ -1,6 +1,3 @@
-close all
-clear all
-
 deathcause = readtable('cause_of_death.xlsx');
 sanitation = readtable('sanitation.xlsx');
 lifeexpect = readtable('life_expectancy.xlsx');
@@ -48,15 +45,8 @@ avg2013 = mean(lifeexpecty(:,3))
 
 figure;
 hold on
-plot([lifeexpectx(1,1),lifeexpectx(1,2),lifeexpectx(1,3)],[avg1990,avg2000,avg2013],'k-o')
 plot(lifeexpectx, lifeexpecty, 'x')
-legend('average life expectancy')
-title('Life Expectancy in Every Country')
-xlabel('Year')
-ylabel('Life Expectancy (in years)')
-axis([1987 2015 30 95])
-hold off
-
+plot(lifeexpectx(1,1),avg1990,'*-',lifeexpectx(1,2),avg2000,'*-',lifeexpectx(1,3),avg2013,'-')
 
 
 
